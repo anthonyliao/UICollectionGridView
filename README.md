@@ -8,8 +8,7 @@ an iOS multi-column sortable table control
 How to use
 ----------
 Create the controller, set the columns, and add rows
-<pre><code>
-gridViewController = UICollectionGridViewController()
+<pre><code>gridViewController = UICollectionGridViewController()
 gridViewController.setColumns(["Contact", "Sent", "Received", "Open Rate"])
 gridViewController.addRow(["john smith", "100", "88", "10%"])
 gridViewController.addRow(["john doe", "23", "16", "81%"])
@@ -19,8 +18,7 @@ view.addSubview(gridViewController.view)
 </code></pre>
 
 Add logic to sort the columns
-<pre><code>
-func sort(colIndex: Int, asc: Bool, rows: [[AnyObject]]) -> [[AnyObject]] {
+<pre><code>func sort(colIndex: Int, asc: Bool, rows: [[AnyObject]]) -> [[AnyObject]] {
     var sortedRows = rows.sorted { (firstRow: [AnyObject], secondRow: [AnyObject]) -> Bool in
         //sort logic
     }
@@ -31,7 +29,7 @@ func sort(colIndex: Int, asc: Bool, rows: [[AnyObject]]) -> [[AnyObject]] {
 How to install
 --------------
 1. Install `ionicons-IOS` - https://github.com/sweetmandm/ionicons-iOS
-2. Import and create `UICollectionGridViewController`
+2. Import and instantiate `UICollectionGridViewController`
 
 Demo
 ----
