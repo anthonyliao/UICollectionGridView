@@ -3,7 +3,7 @@ UICollectionGridView
 
 an iOS multi-column sortable table control
 
-![](UICollectionGridViewDemo.gif)
+![](/UICollectionGridView/blob/master/UICollectionGridViewDemo.gif)
 
 How to use
 ----------
