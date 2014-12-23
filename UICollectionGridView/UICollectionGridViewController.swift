@@ -28,8 +28,8 @@ class UICollectionGridViewController: UICollectionViewController {
         var layout = UICollectionGridViewLayout()
         super.init(collectionViewLayout: layout)
         layout.viewController = self
-        collectionView!.layer.borderWidth = 1
-        collectionView!.layer.borderColor = UIColor.redColor().CGColor
+//        collectionView!.layer.borderWidth = 1
+//        collectionView!.layer.borderColor = UIColor.redColor().CGColor
         collectionView!.backgroundColor = UIColor.whiteColor()
         collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collectionView!.delegate = self
