@@ -3,7 +3,7 @@ UICollectionGridView
 
 an iOS multi-column sortable table control
 
-!(UICollectionGridViewDemo.gif)
+![](UICollectionGridViewDemo.gif)
 
 How to use
 ----------
@@ -30,8 +30,8 @@ func sort(colIndex: Int, asc: Bool, rows: [[AnyObject]]) -> [[AnyObject]] {
 
 How to install
 --------------
-1. Install ionicons-IOS - https://github.com/sweetmandm/ionicons-iOS
-2. Import and create UICollectionGridViewController
+1. Install `ionicons-IOS` - https://github.com/sweetmandm/ionicons-iOS
+2. Import and create `UICollectionGridViewController`
 
 Demo
 ----
