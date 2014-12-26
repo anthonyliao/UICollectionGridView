@@ -98,6 +98,12 @@ class UICollectionGridViewLayout: UICollectionViewLayout {
         contentSize = CGSizeMake(contentWidth, contentHeight)
     }
     
+    override func invalidateLayout() {
+        itemAttributes = []
+        itemsSize = []
+        contentSize = CGSizeZero
+    }
+    
     override func collectionViewContentSize() -> CGSize {
         return contentSize
     }

@@ -49,6 +49,8 @@ class UICollectionGridViewController: UICollectionViewController {
     
     func addRow(row: [AnyObject]) {
         rows.append(row)
+        collectionView!.collectionViewLayout.invalidateLayout()
+        collectionView!.reloadData()
     }
     
     override func viewDidLoad() {
@@ -107,7 +109,7 @@ class UICollectionGridViewController: UICollectionViewController {
         
         //Column highlighting and sorting
         if indexPath.row == selectedColIdx {
-            cell.backgroundColor = UIColor(red: 220/255, green: 255/255, blue: 255/255, alpha: 1)
+            cell.backgroundColor = UIColor(red: 122/255, green: 186/255, blue: 255/255, alpha: 1)
             if indexPath.section == 0 {
                 var imageWidth: CGFloat = 15
                 var imageHeight: CGFloat = 20
